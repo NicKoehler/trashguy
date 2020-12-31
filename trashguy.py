@@ -49,7 +49,7 @@ class TrashGuy:
         self.r_space = self.r_space[1:]
 
     def play(self):
-        for inp in self.user_input:
+        for _ in self.user_input:
             self.go_right()
             self.take_letter()
             self.go_left()
@@ -58,10 +58,10 @@ class TrashGuy:
 
 if __name__ == "__main__":
     if len(argv) == 2:
-        guy = TrashGuy(argv[1]).play()
+        TrashGuy(argv[1]).play()
     elif len(argv) == 3:
         if argv[2].isnumeric():
-            guy = TrashGuy(argv[1], int(argv[2])).play()
+            TrashGuy(argv[1], int(argv[2])).play()
         else:
             print("Second argument must be speed (Default=1)")
     else:
