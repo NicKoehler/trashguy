@@ -9,7 +9,7 @@ l_space=" "
 r_space=" "
 user=$right
 
-if [ -z $1 ]
+if [ -z "$1" ]
 then
     echo "Type $0 followed by some text."
     exit
