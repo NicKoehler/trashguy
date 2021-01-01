@@ -37,7 +37,7 @@ print() {
     sleep $speed
 }
 
-# looping throught the letters
+# looping through the letters
 for (( i=0; i<$len_input; i++ )); do
 
     # go right
