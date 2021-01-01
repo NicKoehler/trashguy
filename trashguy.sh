@@ -1,7 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
 user_input=$1
-len_input=${#user_input}
 speed=$2
 trash="🗑"
 right="(> ^_^)>"
@@ -38,8 +37,8 @@ print() {
 }
 
 # looping through the letters
-for (( i=0; i<$len_input; i++ )); do
-
+while (( ${#user_input} > 0 ))
+do
     # go right
     print
     while ((${#r_space} > 0))
